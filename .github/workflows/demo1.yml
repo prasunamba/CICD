@@ -3,6 +3,7 @@ on:
   push:
     branches: 
       - main
+      - udmmaster
   pull_request:
     branches:
       - main
@@ -20,4 +21,6 @@ jobs:
 
       - name: build and run
         run: go run main.go
-    
+
+      # - name: testing 
+      #   run: go test 
